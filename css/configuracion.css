@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo{
+    background-color: #510373;
+}
+.banner{
+    background-color: #0D0D07;
+}
