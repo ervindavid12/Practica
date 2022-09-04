@@ -4,8 +4,182 @@
     box-sizing: border-box;
 }
 .fondo{
-    background-color: #510373;
+    width: 100%;
+    height: 720px;
+    background-image: url(/img/cuadro_para_fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
 }
 .banner{
-    background-color: #0D0D07;
+    background-color: #B6B7BA;
+    width: 100%;
+    height: 110px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.texto-logo{
+    font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Russo One', sans-serif;
+font-size: 30px;
+color: black;
+}
+.menu{
+   display: flex;
+   justify-content: space-between;
+   font-size: 20px; 
+   font-family: 'Barlow Condensed', sans-serif;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'Montserrat', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    
+}
+.menu a{
+    margin: 0 10px 0 10px;
+}
+.boton0{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #B6B7BA;
+    color: #747578;
+}
+.ingreso{
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'Montserrat', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    color: #747578;
+    background-color: #B6B7BA;
+    margin: 10px;
+}
+.texto-centrado{
+    font-family: 'Barlow Condensed', sans-serif;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'Montserrat', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 40px;
+}
+.color{
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    color: #FA7F08;
+    font-size: 50px;
+}
+.descripcion{
+    color: #747578;
+}
+.contenedor-botones{
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+.boton{
+    align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #141414;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+.boton.uno{
+    text-decoration: none;
+    margin: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'Montserrat', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background: #141414;
+    color: white;
+    border-radius: 20px;
+
+}.boton.uno::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #05AFF2;
+	position: absolute;
+	z-index: 1;
+	top: -500px;
+	left: 0;
+	transition: .3s ease-in-out all;
+}
+
+.boton.uno::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: #F2E30F;
+}
+.boton.uno:hover::after {
+	top: 0;
+}
+.boton.dos{
+    text-decoration: none;
+    margin: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+   font-family: 'Libre Baskerville', serif;
+   font-family: 'Montserrat', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background: #FF6B1A;
+    color: white;
+    border-radius: 20px;
+}
+.boton.dos::after{
+    content: "";
+	width: 100%;
+	height: 100%;
+	background: #BF2604;
+	position: absolute;
+	z-index: 1;
+	top: -500px;
+	left: 0;
+	transition: .3s ease-in-out all;
+}
+.boton.dos::after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: #F2E30F;
+}
+.boton.dos:hover::after{
+    top: 0;
+}
+.imagen{
+    margin-top: 5px;
 }
